@@ -2,7 +2,7 @@ name <<= submitProjectName(pname => "progfun-"+ pname)
 
 version := "1.0.0"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.1"
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
@@ -12,11 +12,11 @@ libraryDependencies += "junit" % "junit" % "4.10" % "test"
 
 // This setting defines the project to which a solution is submitted. When creating a
 // handout, the 'createHandout' task will make sure that its value is correct.
-submitProjectName := "recfun"
+submitProjectName := "funsets"
 
 // See documentation in ProgFunBuild.scala
 projectDetailsMap := {
-val currentCourseId = "progfun-003"
+val currentCourseId = "progfun-002"
 Map(
   "example" ->  ProjectDetails(
                   packageName = "example",
@@ -108,5 +108,3 @@ commonSourcePackages += "common"
 // Packages in src/test/scala that are used for grading projects. Always included
 // compiling tests, grading a project.
 gradingTestPackages += "grading"
-
-
